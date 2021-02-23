@@ -5,10 +5,19 @@
 =======               DEFINES & MACROS FOR GENERAL PURPOSE              =======
 =============================================================================*/
 #define MAX_COLORPAIR_NAME_CHARS        16
+#define NUM_OF_MIN_COLORS               5
 
 /*=============================================================================
 =======                       CONSTANTS  &  TYPES                       =======
 =============================================================================*/
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
+
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
+
 typedef enum 
 {WHITE, RED, BLACK, YELLOW, VIOLET}majorColor_t;
 
