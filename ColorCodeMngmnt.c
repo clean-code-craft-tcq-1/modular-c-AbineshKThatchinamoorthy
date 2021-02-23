@@ -6,9 +6,11 @@
 ***                  
 *****************************************************************************/
 
+/* Standard Inlusions */
 #include <stdio.h>
 #include <assert.h>
 
+/* Project Inlusions */
 #include "ColorCodeMngmnt.h"
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
