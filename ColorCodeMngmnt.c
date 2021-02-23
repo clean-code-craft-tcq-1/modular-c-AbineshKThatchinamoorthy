@@ -36,8 +36,8 @@ colorPair_t getColorFromPairNumber_s(int pairNumber_i)
 
 int getPairNumberFromColor_i(majorColor_t majorColor_e, minorColor_t minorColor_e) 
 {
-    return ((colorPair_p->majorColor_e * NUM_OF_MIN_COLORS) +
-            colorPair_p->minorColor_e + GENERIC_VALUE_ONE);
+    return ((majorColor_e * NUM_OF_MIN_COLORS) +
+            minorColor_e + GENERIC_VALUE_ONE);
 }
 
 void testNumberToPair_v(int pairNumber,
