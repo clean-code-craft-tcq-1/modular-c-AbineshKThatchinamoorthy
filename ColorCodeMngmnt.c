@@ -13,8 +13,8 @@
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
-        MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);
+        majorColorNames_a[colorPair->majorColor],
+        minorColorNames_a[colorPair->minorColor]);
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
