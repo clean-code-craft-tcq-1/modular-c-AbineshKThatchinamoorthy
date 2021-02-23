@@ -10,11 +10,11 @@
 /*=============================================================================
 =======                       CONSTANTS  &  TYPES                       =======
 =============================================================================*/
-const char* MajorColorNames[] = {
+const char* majorColorNames_a[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };
 
-const char* MinorColorNames[] = {
+const char* minorColorNames_a[] = {
     "Blue", "Orange", "Green", "Brown", "Slate"
 };
 
