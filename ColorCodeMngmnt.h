@@ -27,7 +27,7 @@ typedef enum
 typedef struct {
     majorColor_t majorColor;
     minorColor_t minorColor;
-} ColorPair;
+} colorPair_t;
 
 
 /*EOF*/
