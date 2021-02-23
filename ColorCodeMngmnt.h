@@ -1,4 +1,5 @@
 
+#include <stdio.h>
 
 typedef enum 
 {WHITE, RED, BLACK, YELLOW, VIOLET}majorColor_t;
@@ -10,3 +11,5 @@ typedef struct {
     majorColor_t majorColor;
     minorColor_t minorColor;
 } ColorPair;
+
+
