@@ -1,12 +1,10 @@
 /******************************************************************************
-/*!
 ***     \file        ColorCodeMngmnt.c
 ***     \author      Abinesh KanjiKovil Thatchinamoorthy
 ***     \brief       Color Code Management for cables
 ***    File_description
 ***                  
-***
-/*****************************************************************************/
+*****************************************************************************/
 
 #include <stdio.h>
 #include <assert.h>
