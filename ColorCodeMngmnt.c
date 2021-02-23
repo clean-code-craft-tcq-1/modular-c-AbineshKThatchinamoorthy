@@ -24,7 +24,7 @@ colorPair_t GetColorFromPairNumber(int pairNumber) {
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair_s.majorColor = 
         (majorColor_t)(zeroBasedPairNumber / NUM_OF_MIN_COLORS);
-    colorPair.minorColor =
+    colorPair_s.minorColor =
         (minorColor_t)(zeroBasedPairNumber % NUM_OF_MIN_COLORS);
     return colorPair_s;
 }
@@ -42,8 +42,8 @@ void testNumberToPair(int pairNumber,
     char colorPairNameStr_a[MAX_COLORPAIR_NAME_CHARS];
     formatToString_v(&colorPair_s, colorPairNameStr_a);
     printf("Got pair %s\n", colorPairNameStr_a);
-    assert(colorPair.majorColor == expectedMajor);
-    assert(colorPair.minorColor == expectedMinor);
+    assert(colorPair_s.majorColor == expectedMajor);
+    assert(colorPair_s.minorColor == expectedMinor);
 }
 
 void testPairToNumber(
