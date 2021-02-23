@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include <ColorCodeMngmnt.h>
+#include "ColorCodeMngmnt.h"
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
