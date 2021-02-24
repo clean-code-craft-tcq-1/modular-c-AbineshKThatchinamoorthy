@@ -26,9 +26,11 @@
 *//*------------------------------------------------------------------------*/
 void printColorCodeManual_v(void)
 {
+  char colorPairNameStr_a[MAX_COLORPAIR_NAME_CHARS];
   for(int cnt_i = 1; cnt_i <= 25; cnt_i++)
   {
-    colorPair_t colorPair_s = getColorFromPairNumber_s(cnt_i);
-    printf("%d  %s %s\n", cnt_i, colorPair_s.majorColor_e, colorPair_s.minorColor_e);
+    colorPair_t colorPair_s = getColorFromPairNumber_s(cnt_i);  
+    formatToString_v(&colorPair_s, colorPairNameStr_a);
+    printf("%d  %s \n", cnt_i, colorPairNameStr_a);
   }
 }
