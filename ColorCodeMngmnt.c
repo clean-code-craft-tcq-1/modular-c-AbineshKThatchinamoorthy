@@ -9,10 +9,6 @@
 ***                  
 *****************************************************************************/
 
-/* Standard Inlusions */
-#include <stdio.h>
-#include <assert.h>
-
 /* Project Inlusions */
 #include "ColorCodeMngmnt.h"
 
@@ -75,62 +71,5 @@ int getPairNumberFromColor_i(majorColor_t majorColor_e,
             minorColor_e + GENERIC_VALUE_ONE);
 } /* EO getPairNumberFromColor_i */
 
-/*---------------------------------------------------------------------------*/
-/*     FUNCTION:    testNumberToPair_v
- */
-/*!    \brief       Tests whether the input color names are the corresponding 
- *                  names of the provided pair number
- *
- *     \param       pairNumber_i [IN] - Pairnumber for which the verification
-                    has to be done (int)
- *     \param       expectedMajor_e [IN] -  Expected major Color for the
-                    provided pair number(minorColor_t)
- *     \param       expectedMinor_e [IN] - Expected minor Color for the
-                    provided pair number(majorColor_t)
-*     \returns     void
-*//*------------------------------------------------------------------------*/
-void testNumberToPair_v(int pairNumber_i,
-                        majorColor_t expectedMajor_e,
-                        minorColor_t expectedMinor_e)
-{
-    colorPair_t colorPair_s = getColorFromPairNumber_s(pairNumber_i);
-    char colorPairNameStr_a[MAX_COLORPAIR_NAME_CHARS];
-    formatToString_v(&colorPair_s, colorPairNameStr_a);
-    printf("Got pair %s\n", colorPairNameStr_a);
-    assert(colorPair_s.majorColor_e == expectedMajor_e);
-    assert(colorPair_s.minorColor_e == expectedMinor_e);
-} /* EO testNumberToPair_v */
+/*EOF*/
 
-/*---------------------------------------------------------------------------*/
-/*     FUNCTION:    testNumberToPair_v
- */
-/*!    \brief       Tests whether the pair number is the corresponding 
- *                  pairnumber of the provided color names
- *
- *     \param       expectedMajor_e [IN] - Major Color for which the
-                    verification has to be done (majorColor_t)
- *     \param       expectedMinor_e [IN] - Minor Color for which the
-                    verification has to be done (minorColor_e)
- *     \param       pairNumber_i [IN] - Expected Pairnumber for the provided
-                    color names (int)    
- *     \returns     void
-*//*------------------------------------------------------------------------*/
-void testPairToNumber_v(majorColor_t majorColor_e,
-                        minorColor_t minorColor_e,
-                        int expectedPairNumber_i)
-{
-    int pairNumber = getPairNumberFromColor_i(majorColor_e, minorColor_e);
-    printf("Got pair number %d\n", pairNumber);
-    assert(pairNumber == expectedPairNumber_i);
-} /* EO testPairToNumber_v */
-
-int main() 
-{
-    testNumberToPair_v(4, WHITE, BROWN);
-    testNumberToPair_v(5, WHITE, SLATE);
-
-    testPairToNumber_v(BLACK, ORANGE, 12);
-    testPairToNumber_v(VIOLET, SLATE, 25);
-  
-    return 0;
-} /* EO main */
