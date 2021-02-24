@@ -9,7 +9,11 @@
 ***                  
 *****************************************************************************/
 
+/*=============================================================================
+=======                       STANDARD INCLUSIONS                       =======
+=============================================================================*/
 #include <stdio.h>
+#include <assert.h>
 
 /*=============================================================================
 =======               DEFINES & MACROS FOR GENERAL PURPOSE              =======
@@ -40,5 +44,12 @@ typedef struct {
     minorColor_t minorColor_e;
 } colorPair_t;
 
-
+/*=============================================================================
+=======                      FUNCTION DECLARATIONS                      =======
+=============================================================================*/
+void formatToString_v(const colorPair_t* colorPair_p, char* strOutput_p);
+colorPair_t getColorFromPairNumber_s(int pairNumber_i);
+int getPairNumberFromColor_i(majorColor_t majorColor_e,
+                             minorColor_t minorColor_e);
+    
 /*EOF*/
