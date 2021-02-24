@@ -13,6 +13,16 @@
 #include "ColorCodeMngmnt.h"
 
 /*=============================================================================
+=======                      FUNCTION DECLARATIONS                      =======
+=============================================================================*/
+static void testNumberToPair_v(int pairNumber_i,
+                        majorColor_t expectedMajor_e,
+                        minorColor_t expectedMinor_e);
+static void testPairToNumber_v(majorColor_t majorColor_e,
+                        minorColor_t minorColor_e,
+                        int expectedPairNumber_i);
+
+/*=============================================================================
 =======                       FUNCTION DEFINITIONS                      =======
 =============================================================================*/
 
@@ -30,7 +40,7 @@
                     provided pair number(majorColor_t)
 *     \returns     void
 *//*------------------------------------------------------------------------*/
-void testNumberToPair_v(int pairNumber_i,
+static void testNumberToPair_v(int pairNumber_i,
                         majorColor_t expectedMajor_e,
                         minorColor_t expectedMinor_e)
 {
@@ -56,13 +66,13 @@ void testNumberToPair_v(int pairNumber_i,
                     color names (int)    
  *     \returns     void
 *//*------------------------------------------------------------------------*/
-void testPairToNumber_v(majorColor_t majorColor_e,
+static void testPairToNumber_v(majorColor_t majorColor_e,
                         minorColor_t minorColor_e,
                         int expectedPairNumber_i)
 {
-    int pairNumber = getPairNumberFromColor_i(majorColor_e, minorColor_e);
-    printf("Got pair number %d\n", pairNumber);
-    assert(pairNumber == expectedPairNumber_i);
+    int actualPairNumber_i = getPairNumberFromColor_i(majorColor_e, minorColor_e);
+    printf("Got pair number %d\n", actualPairNumber_i);
+    assert(actualPairNumber_i == expectedPairNumber_i);
 } /* EO testPairToNumber_v */
 
 void main() 
