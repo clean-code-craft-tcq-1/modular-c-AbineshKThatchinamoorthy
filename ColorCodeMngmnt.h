@@ -55,4 +55,5 @@ int getPairNumberFromColor_i(majorColor_t majorColor_e,
                              minorColor_t minorColor_e);
 
 #endif
+
 /*EOF*/
