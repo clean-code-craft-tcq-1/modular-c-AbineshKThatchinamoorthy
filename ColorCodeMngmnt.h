@@ -5,7 +5,6 @@
 ***     \file        ColorCodeMngmnt.h
 ***     \author      Abinesh KanjiKovil Thatchinamoorthy
 ***     \brief       Header file of Color Code Management
-***    File_description
 ***                  
 *****************************************************************************/
 #ifndef COLORCODEMANAGEMENT_H
