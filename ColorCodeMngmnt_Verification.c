@@ -82,6 +82,8 @@ int main()
     /*Check whether expected pairnum are in corresponence with respective names*/
     testPairToNumber_v(BLACK, ORANGE, 12);
     testPairToNumber_v(VIOLET, SLATE, 25);
+    
+    printColorCodeManual_v();
   
     return 0;
 } /* EO main */
