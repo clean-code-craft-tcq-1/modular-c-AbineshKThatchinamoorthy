@@ -27,6 +27,9 @@
 void printColorCodeManual_v(void)
 {
   char colorPairNameStr_a[MAX_COLORPAIR_NAME_CHARS];
+  printf("=================================================================\n");
+  printf("==========      REFERENCE MANUAL FOR COLOR CODE         =========\n");
+  printf("=================================================================\n");
   for(int cnt_i = 1; cnt_i <= 25; cnt_i++)
   {
     colorPair_t colorPair_s = getColorFromPairNumber_s(cnt_i);  
