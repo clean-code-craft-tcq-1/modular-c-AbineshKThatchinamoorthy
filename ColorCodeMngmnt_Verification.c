@@ -75,13 +75,16 @@ static void testPairToNumber_v(majorColor_t majorColor_e,
     assert(actualPairNumber_i == expectedPairNumber_i);
 } /* EO testPairToNumber_v */
 
-void main() 
+int main() 
 {
+    /*Check whether expected names are in corresponence with respective pairnum*/
     testNumberToPair_v(4, WHITE, BROWN);
     testNumberToPair_v(5, WHITE, SLATE);
-
+    /*Check whether expected pairnum are in corresponence with respective names*/
     testPairToNumber_v(BLACK, ORANGE, 12);
     testPairToNumber_v(VIOLET, SLATE, 25);
+  
+    return 0;
 } /* EO main */
 
 /* EOF */
