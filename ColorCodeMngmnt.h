@@ -8,6 +8,8 @@
 ***    File_description
 ***                  
 *****************************************************************************/
+#ifndef COLORCODEMANAGEMENT_H
+#define COLORCODEMANAGEMENT_H
 
 /*=============================================================================
 =======                       STANDARD INCLUSIONS                       =======
@@ -51,5 +53,6 @@ void formatToString_v(const colorPair_t* colorPair_p, char* strOutput_p);
 colorPair_t getColorFromPairNumber_s(int pairNumber_i);
 int getPairNumberFromColor_i(majorColor_t majorColor_e,
                              minorColor_t minorColor_e);
-    
+
+#endif
 /*EOF*/
