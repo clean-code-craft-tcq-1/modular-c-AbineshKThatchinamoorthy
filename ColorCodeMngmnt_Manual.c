@@ -34,6 +34,6 @@ void printColorCodeManual_v(void)
   {
     colorPair_t colorPair_s = getColorFromPairNumber_s(cnt_i);  
     formatToString_v(&colorPair_s, colorPairNameStr_a);
-    printf("%d  %s \n", cnt_i, colorPairNameStr_a);
+    printf("\t %d \t %s \n", cnt_i, colorPairNameStr_a);
   }
 }
