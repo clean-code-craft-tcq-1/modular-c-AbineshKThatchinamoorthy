@@ -5,7 +5,6 @@
 ***     \file        ColorCodeMngmnt.c
 ***     \author      Abinesh KanjiKovil Thatchinamoorthy
 ***     \brief       Source Code of Color Code Management for cables
-***    File_description
 ***                  
 *****************************************************************************/
 
