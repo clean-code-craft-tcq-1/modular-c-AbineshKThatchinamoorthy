@@ -27,13 +27,6 @@
 /*=============================================================================
 =======                       CONSTANTS  &  TYPES                       =======
 =============================================================================*/
-const char* majorColorNames_a[] = {
-    "White", "Red", "Black", "Yellow", "Violet"
-};
-
-const char* minorColorNames_a[] = {
-    "Blue", "Orange", "Green", "Brown", "Slate"
-};
 
 typedef enum 
 {WHITE, RED, BLACK, YELLOW, VIOLET}majorColor_t;
